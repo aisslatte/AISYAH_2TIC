@@ -4,6 +4,7 @@ use App\Http\Controllers\MahasiswaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MatakuliahController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\QuestionController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -38,3 +39,5 @@ Route::get('/about', function () {
 Route::resource('matakuliah', MatakuliahController::class);
 Route::get('/matakuliah/show/{ST445}', [MatakuliahController::class, 'show']);
 Route::get('/home',[HomeController::class,'index']);
+Route::post('question/store', [QuestionController::class, 'store'])
+		->name('question.store');
