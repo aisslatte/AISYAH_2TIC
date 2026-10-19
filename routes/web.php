@@ -4,6 +4,7 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\DashboardController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -29,7 +30,7 @@ Route::get('/mahasiswa', function () {
   return 'Halo Mahasiswa';
 })->name('mahasiswa.show');
 
-Route::get('/mahasiswa/{param1}', 
+Route::get('/mahasiswa/{param1}',
 [MahasiswaController::class, 'show']);
 
 Route::get('/about', function () {
@@ -41,3 +42,6 @@ route::get('/home', [HomeController::class, 'index']);
 use App\Http\Controllers\QuestionController;
 Route::post('question/store', [QuestionController::class, 'store'])
 		->name('question.store');
+
+Route ::get('dashboard',[DashboardController::class, 'index'])
+        ->name('dashboard');
