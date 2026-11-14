@@ -52,7 +52,11 @@
 <body>
 
     <div class="thankyou-container">
+<<<<<<< HEAD
         <h2>Terima Kasih, {{$nama}} 🎉</h2>
+=======
+        <h2>Terima Kasih, {{ $nama }}! 🎉</h2>
+>>>>>>> e8be39a (Partial View dan CRUD User)
         <p class="lead">Pertanyaan Anda telah berhasil dikirim.</p>
 
         <blockquote>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!--
 
 =========================================================
@@ -266,13 +267,25 @@
             </div>
         </nav>
 
+=======
+@extends('layouts.admin.app')
+@section('content')
+>>>>>>> e8be39a (Partial View dan CRUD User)
         <div class="py-4">
             <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
                 <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
                     <li class="breadcrumb-item">
                         <a href="#">
+<<<<<<< HEAD
                             <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+=======
+                            <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                                </path>
+>>>>>>> e8be39a (Partial View dan CRUD User)
                             </svg>
                         </a>
                     </li>
@@ -291,17 +304,26 @@
             </div>
         </div>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e8be39a (Partial View dan CRUD User)
         <div class="row">
             <div class="col-12 mb-4">
                 <div class="card border-0 shadow components-section">
                     <div class="card-body">
+<<<<<<< HEAD
                         <form action="{{route('pelanggan.store')}}" method="POST">
+=======
+                        <form action="{{ route('pelanggan.store') }}" method="POST">
+>>>>>>> e8be39a (Partial View dan CRUD User)
                             @csrf
                             <div class="row mb-4">
                                 <div class="col-lg-4 col-sm-6">
                                     <!-- First Name -->
                                     <div class="mb-3">
                                         <label for="first_name" class="form-label">First name</label>
+<<<<<<< HEAD
                                         <input type="text" id="first_name" class="form-control" name="first_name" required>
                                     </div>
 
@@ -312,6 +334,22 @@
                                     </div>
                                 </div>
 
+=======
+                                        <input type="text" id="first_name" class="form-control" name="first_name"
+                                            required>
+                                    </div>
+
+
+                                    <!-- Last Name -->
+                                    <div class="mb-3">
+                                        <label for="last_name" class="form-label">Last name</label>
+                                        <input type="text" id="last_name" class="form-control" name="last_name"
+                                            required>
+                                    </div>
+                                </div>
+
+
+>>>>>>> e8be39a (Partial View dan CRUD User)
                                 <div class="col-lg-4 col-sm-6">
                                     <!-- Birthday -->
                                     <div class="mb-3">
@@ -319,6 +357,10 @@
                                         <input type="date" id="birthday" class="form-control" name="birthday">
                                     </div>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e8be39a (Partial View dan CRUD User)
                                     <!-- Gender -->
                                     <div class="mb-3">
                                         <label for="gender" class="form-label">Gender</label>
@@ -331,29 +373,51 @@
                                     </div>
                                 </div>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e8be39a (Partial View dan CRUD User)
                                 <div class="col-lg-4 col-sm-12">
                                     <!-- Email -->
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
+<<<<<<< HEAD
                                         <input type="text" id="email" class="form-control" name="email" required>
                                     </div>
 
+=======
+                                        <input type="text" id="email" class="form-control" name="email"
+                                            required>
+                                    </div>
+
+
+>>>>>>> e8be39a (Partial View dan CRUD User)
                                     <!-- Phone -->
                                     <div class="mb-3">
                                         <label for="phone" class="form-label">Phone</label>
                                         <input type="text" id="phone" class="form-control" name="phone">
                                     </div>
 
+<<<<<<< HEAD
                                     <!-- Buttons -->
                                     <div class="">
                                         <button type="submit" class="btn btn-primary">Simpan</button>
                                         <a href="{{ route('pelanggan.index') }}" class="btn btn-outline-secondary ms-2">Batal</a>
+=======
+
+                                    <!-- Buttons -->
+                                    <div class="">
+                                        <button type="submit" class="btn btn-primary">Simpan</button>
+                                        <a href="{{ route('pelanggan.index') }}"
+                                            class="btn btn-outline-secondary ms-2">Batal</a>
+>>>>>>> e8be39a (Partial View dan CRUD User)
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div>
 
+<<<<<<< HEAD
                 </div>
             </div>
         </div>
@@ -393,3 +457,10 @@
 </body>
 
 </html>
+=======
+
+                </div>
+            </div>
+        </div>
+@endsection
+>>>>>>> e8be39a (Partial View dan CRUD User)
